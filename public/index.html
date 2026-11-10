@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Finance API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <p class="logo"><span>$</span> My Student Finance</p>
+        <a class="site-link" href="https://anchalpatel05.github.io/studentbudget" target="_blank">View Site &rarr;</a>
+    </header>
+
+    <main class="hero">
+        <p class="hero-label">Server Side API</p>
+        <h1>My Student Finance <em>API</em></h1>
+        <p class="intro">This server provides the finance app data that the My Student Finance React site loads on its Resources page.</p>
+    </main>
+
+    <section class="endpoints">
+        <h2>Available Endpoints</h2>
+
+        <article class="endpoint-card">
+            <div class="endpoint-head">
+                <p class="method">GET</p>
+                <h3>Get All Apps</h3>
+            </div>
+            <p>Returns the list of budgeting, saving, and investing apps recommended for students.</p>
+            <a class="endpoint-link" href="/api/apps">/api/apps</a>
+        </article>
+
+        <article class="endpoint-card">
+            <div class="endpoint-head">
+                <p class="method">GET</p>
+                <h3>App Images</h3>
+            </div>
+            <p>Each app's <code>img_name</code> points to an icon served from the images folder.</p>
+            <a class="endpoint-link" href="/images/mint.svg">/images/mint.svg</a>
+        </article>
+
+        <h2 class="fields-title">Each app includes</h2>
+        <ul class="field-list">
+            <li><code>_id</code> number</li>
+            <li><code>name</code> string</li>
+            <li><code>category</code> string</li>
+            <li><code>price</code> FREE or PAID</li>
+            <li><code>description</code> string</li>
+            <li><code>color</code> card theme</li>
+            <li><code>img_name</code> image path</li>
+        </ul>
+    </section>
+
+    <footer class="main-footer">
+        <p>My Student Finance &middot; Helping students spend smarter, save better, and stress less.</p>
+    </footer>
+</body>
+</html>

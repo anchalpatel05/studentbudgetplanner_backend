@@ -1,0 +1,218 @@
+:root {
+    --green: #176f4e;
+    --light-green: #d2edda;
+    --green-text: #b3d7ac;
+    --yellow: #facb3c;
+    --white: #fafaf7;
+    --dark: #1e2038;
+    --gray: #697184;
+    --border: #e3e6ea;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--white);
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+code {
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: var(--light-green);
+    color: var(--green);
+    font-size: 14px;
+}
+
+/* Header */
+.main-header {
+    padding: 14px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--green);
+}
+
+.logo {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo span {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background: var(--yellow);
+    color: var(--green);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-link {
+    color: var(--green-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.site-link:hover {
+    color: var(--yellow);
+}
+
+/* Hero */
+.hero {
+    padding: 60px 25px;
+    background: var(--green);
+    color: white;
+    text-align: center;
+}
+
+.hero-label {
+    margin: 0;
+    padding: 6px 16px;
+    border-radius: 999px;
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--green);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 20px 0 0;
+    font-size: 36px;
+}
+
+.hero h1 em {
+    color: var(--yellow);
+}
+
+.intro {
+    max-width: 650px;
+    margin: 18px auto 0;
+    color: var(--green-text);
+    line-height: 1.6;
+}
+
+/* Endpoints */
+.endpoints {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.endpoints h2 {
+    margin: 0 0 25px;
+    font-size: 30px;
+}
+
+.endpoint-card {
+    margin-bottom: 20px;
+    padding: 25px;
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    background: white;
+}
+
+.endpoint-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.endpoint-card .method {
+    margin: 0;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--green);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.endpoint-head h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.endpoint-card p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.endpoint-link {
+    padding: 10px 18px;
+    border-radius: 12px;
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--green);
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.endpoint-link:hover {
+    background: var(--green);
+    color: white;
+}
+
+.fields-title {
+    margin-top: 45px !important;
+}
+
+.field-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+}
+
+.field-list li {
+    padding: 12px 16px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: white;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+/* Footer */
+.main-footer {
+    padding: 30px 25px;
+    background: var(--dark);
+    color: var(--green-text);
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .main-header {
+        padding: 14px 12%;
+    }
+
+    .hero {
+        padding: 80px 30px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+}
